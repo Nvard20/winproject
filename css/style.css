@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,500;1,500&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.logo{
+    display: block;
+    max-width: 132px;
+}
+.logo > img{
+    width: 100%;
+}
+.inner-header{
+    display: flex;
+    justify-content: space-between;
+    /* margin: 0 189px; */
+    align-items: center;
+    max-width: 1146px;
+    margin: auto;
+}
+.menu > ul{
+
+    display: flex;
+    justify-content: space-between;
+}
+.account-set{
+    display: flex;
+    align-items: center;
+}
+.menu > ul > li >a {
+    font-family: Rubik;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 17px;
+color: #FFFFFF;
+display: flex;
+align-items: center;
+transition: .1s;
+}
+.menu > ul > li{
+    margin-right: 35px;
+}
+.menu > ul > li > a:hover{
+    color:#3AA0FF
+
+}
+.header{
+    position: absolute;
+    width: 100%;
+    top: 19px;
+}
+.login{
+    font-family: Rubik;
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 17px;
+color: #FFFFFF;
+margin-right: 25px;
+}
+.register{
+    font-family: Rubik;
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 17px;
+color: #FFFFFF;
+background: linear-gradient(93.28deg, #3AA0FF 0.38%, #137CF9 54.07%, #0152F9 100%);
+border-radius: 5px;
+width: 140px;
+height: 40px;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.new{
+    font-family: Rubik;
+font-style: normal;
+font-weight: 500;
+font-size: 10px;
+line-height: 10px;
+text-transform: uppercase;
+color: #FFFFFF;
+width: 30px;
+height: 16px;
+display: flex;
+border-radius: 3px;
+align-items: center;
+justify-content: center;
+background: linear-gradient(93.28deg, #3AA0FF 0.38%, #137CF9 54.07%, #0152F9 100%);
+margin-left: 5px;
+}
+.main-land{
+    background-image: url(../img/fon.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.main-inner{
+    max-width: 1146px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.mainbg{
+    padding-top: 120px;
+
+}
+.mainbg > img{
+    max-width: 752px;
+
+}
+.div-smm{
+    max-width: 499px;
+    padding-top: 167px;
+
+}
+.smm-img{
+    max-width: 499px;
+
+}
+.smm-img > img{
+    width: 100%;
+}
+
+.smm-text{
+    margin-left: 25px;
+
+}
+.smm-text > h2{
+    font-family: 'Rubik';
+font-style: normal;
+font-weight: 500;
+font-size: 34px;
+line-height: 45px;
+
+color: #FFFFFF;
+}
+.yell{
+    color: #EFC10B !important;
+
+}
+.bgn{
+    font-family: Rubik;
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 19px;
+text-align: center;
+color: #FFFFFF;
+display: flex;
+border-radius: 10px;
+align-items: center;
+justify-content: center;
+background: linear-gradient(93.28deg, #3AA0FF 0.38%, #137CF9 54.07%, #0152F9 100%);
+margin-right: 20px;
+width: 281px;
+height: 61px;
+}
+.more{
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #FFFFFF;
+    display: flex;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    width: 189px;
+    height: 61px;
+    background-color: #4b4872;
+
+}
+.btnss{
+    margin-top: 60px;
+    display: flex;
+    align-items: center;
+}
+@media(max-width:1350px){
+ .mainbg >img{
+    width: 100%;
+
+ }
+}
+@media (max-width: 1200px){
+   .bgn{
+    width: 189px;
+
+   }
+   .main-inner{
+       margin: 0 10px;
+   }
+ 
+}
+@media(max-width:1000px){
+    .inner-header{
+        flex-direction: column;
+    }
+    .main-inner{
+        flex-direction: column;
+        align-items: center;
+    }
+    .btnss{
+        
+
+    justify-content: center;
+    }
+    .menu{
+        display: none;
+    }
+    .mainbg {
+        padding-top: 0px;
+    }
+    .login{
+        border-radius: 5px;
+        width: 140px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 5px;
+        border: 1px solid white;
+    }
+    .account-set{
+        margin-bottom: 40px;
+    }
+    .smm-text{
+        margin-left: 0px;
+    }
+    .smm-text >h2{
+        text-align: center;
+        font-size: 23px;
+    }
+    .btnss {
+        margin-top: 25px;}
+        .logo {
+            display: block;
+            max-width: 198px;
+        }
+}
+@media (max-width: 500px){
+    .btnss{
+        flex-direction: column;
+    }
+    .bgn{
+        margin-right: 0;
+    }
+    .btnss > a{
+        width: 95% !important;
+    }
+    .more{
+        margin-top: 10px;
+    }
+}
