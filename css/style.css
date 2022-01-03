@@ -440,7 +440,7 @@ left: -11px;
     display: none;
 }
 
-@media (max-width:1300px){
+@media (max-width:1290px){
     .box-icon > img{
         display: none;
     }
@@ -452,17 +452,10 @@ left: -11px;
         .icon-mid {
             display: none;
         }
-    .wboxall{
-        align-items: self-end;
-
-    }
+ 
 }
 @media (max-width:1200px){
-    .wbox {
-        max-width: 285px;
-        min-width: 285px;
-
-    }
+  
     .creattive {
         width: 265px;
     }        
@@ -504,6 +497,9 @@ left: -11px;
     .wboxall {
         margin: 25px 35px;
     }
+    .payment-section{
+        margin-bottom: 0px !important;
+    }
 }
 @media (max-width:767px){
     .earning-section > h2{
@@ -516,6 +512,8 @@ left: -11px;
     }
     .creattive {
         width: 235px;
+        margin: auto;
+
     }
     .creattive > .bgn{
         width: 213px;
@@ -526,19 +524,21 @@ left: -11px;
         height: 80px;
         margin: auto;
     }
+    .wbox > h4{
+        text-align: center;
+
+    }
 
 }
 @media(max-width:450px){
-    .wbox{
-        min-width: unset;
-        max-width: 240px;
-
-    }
+ 
     .wbbtn > .bgn{
         width: 80%;
 
     }
-
+    .wbox{
+        height: unset;
+    }
 }
 .vd-container{
     max-width: 1146px;
@@ -681,4 +681,147 @@ background: #FF3A3A !important;
     .vd-container{
         margin-bottom: 20px;
     }
+}
+.payment-section{
+    max-width: 1146px;
+    margin: auto;
+    margin-bottom: 130px;
+
+}
+.pay-text{
+    font-family: Rubik;
+font-style: normal;
+font-weight: bold;
+font-size: 54px;
+line-height: 67px;
+color: #000000;
+max-width: 635px;
+
+}
+.pay-text > span{
+    background: linear-gradient(93.28deg, #3AA0FF 0.38%, #137CF9 54.07%, #0152F9 100%);
+-webkit-text-fill-color: transparent;
+-webkit-background-clip: text;
+}
+.paymhd{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.payment-section{
+    margin-top: 130px;
+}
+.social{
+    max-width: 320px;
+}
+.social > img{
+    width: 100%;
+}
+.soc-box{
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 4px 24px rgba(0, 0, 0, 0.08);
+    max-width: 430px;
+    border-radius: 20px;
+    margin-bottom: 30px;
+}
+.sctext{
+    padding: 35px 30px;
+
+}
+.sctext > h6{
+    font-family: Rubik;
+font-style: normal;
+font-weight: 500;
+font-size: 21px;
+line-height: 25px;
+/* identical to box height */
+
+
+color: #000000;
+
+}
+.sctext > p{
+    
+font-family: Rubik;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 24px;
+/* or 150% */
+
+
+color: rgba(0, 0, 0, 0.6);
+
+}
+.soc-connect{
+    max-width: 890px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 50px auto;
+
+}
+.mob-soc{
+    display: none;
+}
+@media (max-width: 1200px){
+    .paymhd{
+        justify-content: space-around;
+
+    }
+}
+@media (max-width: 1000px){
+    .paymhd{
+        flex-direction: column;
+        align-items: center;
+    }
+    .pay-text{
+        text-align: center;
+
+    }
+    .soc-connect{
+        align-items: center;
+    justify-content: center;
+    }
+    .boxcont{
+        margin: 15px auto;
+    }
+}
+@media (max-width: 768px){
+  
+    .pay-text{
+        text-align: center;
+        font-size: 28px;
+        line-height: 38px;
+
+    }
+    .payment-section{
+        margin-left: 15px;
+        margin-right: 15px;
+        margin-top: 50px;
+
+    }
+    .vd-text{
+        margin-top: 30px;
+
+    }
+
+    .soc-connect{
+        align-items: center;
+    justify-content: center;
+    }
+    .deskimg{
+        display: none;
+    }
+    .mob-soc{
+        display: block;
+    }
+    .list > li {
+       
+        font-size: 15px;}
+    .boxcont{
+        width: 100%;
+    }
+}
+.wbox{
+    margin: auto;
 }
