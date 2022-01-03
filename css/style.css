@@ -111,6 +111,7 @@ margin-left: 5px;
 }
 .mainbg{
     padding-top: 200px;
+    filter: drop-shadow(0px 0px 60px rgba(48, 150, 253, 0.7));
 
 }
 .mainbg > img{
@@ -276,5 +277,258 @@ height: 61px;
     }
     .mainbg > img {
         max-width: 400px;
+    }
+}
+.earning-section{
+    position: relative;
+    max-width: 1500px;
+    margin: auto;
+}
+
+.icon-1{
+    /* position: absolute; */
+    width: 331px;
+}
+.icon-1 > img{
+    width: 100%;
+}
+.earning-section > h2{
+    font-family: Rubik;
+font-style: normal;
+font-weight: bold;
+font-size: 54px;
+line-height: 67px;
+text-align: center;
+color: #000000;
+margin-top: -200px;
+}
+.wbox{
+    max-width: 362px;
+border-radius: 10px;
+background-color: #0d073a;
+padding: 35px 25px;
+margin: 10px 0;
+height: 500px;
+box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 4px 24px rgba(0, 0, 0, 0.08);
+}
+.boxcont{
+    position: relative;
+}
+.box-icon{
+    transform: translateX(70px);
+}
+.box-icon > img{
+max-width: 365px
+}
+.box-icon-last > img{
+    max-width: 365px
+
+}
+
+.simbol{
+    display: flex;
+    justify-content: end;
+    max-width: 1445px;
+}
+.simbol > img{
+    width: 99px;
+}
+.wbicon{
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    filter: drop-shadow(0px 0px 60px rgba(48, 150, 253, 0.7));
+    border-radius: 20px;
+    background: linear-gradient(93.28deg, #3AA0FF 0.38%, #137CF9 54.07%, #0152F9 100%);
+}
+
+.wbox > h4{
+    font-family: Rubik;
+font-style: normal;
+font-weight: bold;
+font-size: 24px;
+line-height: 28px;
+margin-top: 25px;
+color: #FFFFFF;
+}
+
+.list{
+    margin-top: 20px;
+}
+.list > li{
+    font-family: Rubik;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 19px;
+
+color: rgba(255, 255, 255, 0.8);
+margin-left: 10px;
+position: relative;
+margin-bottom: 15px;
+}
+.list > li::before{
+position: absolute;
+width: 5px;
+height: 5px;
+
+background: rgba(255, 255, 255, 0.8);
+border-radius: 10px;
+content: "";
+left: -11px;
+    margin-top: 5px;
+
+
+
+}
+.bl{
+    color: #137CF9;
+}
+.creattive > a{
+    width: 251px;
+    margin-right: 0;
+}
+.creattive > img{
+    width: 100%;
+}
+.cr{
+    margin-top: 95px !important;
+}
+.creattive {
+    width: 312px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    margin-top: 25px;
+}
+.wboxall{
+    display: flex;
+    justify-content: space-between;
+ 
+    max-width: 1146px;
+    margin:120px auto;
+   
+}
+.wbwite{
+    background-color: white !important;
+}
+.wbwite > h4{
+    color: black !important;
+}
+.wbwite > .list > li{
+    color: black;
+} 
+.wbwite > .list > li::before{ 
+    background-color: black !important;
+}
+.icon-mid{
+    transform: translateX(45%);
+
+}
+.wbbtn > .bgn{
+    margin: auto;
+    margin-top: -100px;
+}
+.group{
+    display: none;
+}
+
+@media (max-width:1300px){
+    .box-icon > img{
+        display: none;
+    }
+        .box-icon-last > img{
+            display: none;
+
+        
+        }
+        .icon-mid {
+            display: none;
+        }
+    .wboxall{
+        align-items: self-end;
+
+    }
+}
+@media (max-width:1200px){
+    .wbox {
+        max-width: 285px;
+        min-width: 285px;
+
+    }
+    .creattive {
+        width: 265px;
+    }        
+    .wboxall{
+        margin: 100px 35px;
+
+    }
+    .icon-1{
+        width: 245px;
+
+    }
+    .wbbtn > .bgn {
+        margin: auto;
+        margin-top: 0px;
+    }
+}
+@media (max-width:1000px){
+    .wboxall{
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 35px;
+    }
+    .icon-1{
+        display: none;
+    }
+    .earning-section{
+        margin-top: 260px;
+
+    }
+    .group{
+        width: 284px;
+        margin: auto;
+        display: block;
+        margin-bottom: 25px;
+    }
+    .group > img{
+        width: 100%;
+    }
+    
+}
+@media (max-width:767px){
+    .earning-section > h2{
+        font-size: 28px;
+    }
+    .simbol{
+        display: none;
+    }
+    .creattive {
+        width: 235px;
+    }
+    .creattive > .bgn{
+        width: 213px;
+
+    }
+    .wbicon {
+        width: 80px;
+        height: 80px;
+        margin: auto;
+    }
+}
+@media(max-width:450px){
+    .wbox{
+        min-width: unset;
+        max-width: 240px;
+
+    }
+    .wbbtn > .bgn{
+        width: 80%;
+
     }
 }
