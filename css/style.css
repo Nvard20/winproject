@@ -674,7 +674,7 @@ background: #FF3A3A !important;
             margin: 60px 20px;
     }
 }
-@media (max-width: 1200px){
+@media (max-width: 1000px){
     .graf-container{
          display: none;
     }
