@@ -953,3 +953,190 @@ position: absolute;
         width: 170px;
     }
 }
+.quest-container{
+    max-width: 1146px;
+    margin: 150px auto;
+}
+.quest-container > h2{
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 54px;
+    line-height: 67px;
+    max-width: 655px;
+    margin-left: 40px;
+
+    color: #000000;
+margin-bottom: 0px;
+}
+.content {
+    margin: 80px auto;
+    max-width: 716px;
+}
+
+.accordion__item {
+    background: #fffffe;
+    border-radius: 4px;
+    border-bottom: 1px solid #8080802e;
+    min-width: 716px;
+
+}
+.accordion__item:not(:last-child) {
+    margin-bottom: 15px;
+}
+.accordion__header {
+    padding: 20px;
+    padding-right: 50px;
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 26px;     
+    color: #000000;
+    position: relative;
+    cursor: pointer;
+}
+.accordion__header::after {
+    content: '';
+    display: block;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    right: 20px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background: url('/img/down.png') no-repeat center;
+    background-size: contain;
+    transition: all .4s ease;
+}
+.accordion__body {
+    padding: 0 40px 20px 20px;
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px;    
+    color: rgba(0, 0, 0, 0.8);
+    display: none;
+}
+.open-accordion .accordion__body {
+    display: block;
+
+}
+.open-accordion .accordion__header::after {
+    transform: rotate(-180deg);
+}
+.open-accordion{
+    box-shadow: 0px 2px 4px rgb(0 0 0 / 8%), 0px 4px 24px rgb(0 0 0 / 8%);
+    border-radius: 20px;
+}
+.mask{
+    width: 140px;
+    height: 140px;
+    margin: auto;
+}
+.mask > img{
+    width: 100%;
+    height: 100%;
+}
+.box-quest > h3{
+    font-family: Rubik;
+font-style: normal;
+font-weight: bold;
+font-size: 32px;
+line-height: 36px;
+text-align: center;
+
+color: #000000;
+margin-bottom: 30px;
+}
+.in > p{
+    font-family: Rubik;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 15px;
+text-align: center;
+margin-bottom: 10px;
+
+color: rgba(0, 0, 0, 0.8);
+}
+.quest{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.box-quest{
+    max-width: 362px;
+    margin: auto;
+}
+.iconbox{
+    display: flex;
+    justify-content: space-around;
+    max-width: 130px;
+    margin: auto;
+}
+.iconbox > a{
+    width: 50px;
+    background-color: #137CF9;
+    border-radius: 10px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    filter: drop-shadow(0px 0px 60px rgba(48, 150, 253, 0.7));
+
+}
+.iconbox > a > img{
+    width: 50%;
+    
+}
+.in{
+    margin-bottom: 40px;
+}
+@media (max-width:1100px){
+    .accordion__item{
+        min-width: 550px;
+    }
+}
+
+@media (max-width:1000px){
+    .quest{
+        flex-direction: column;
+        align-items: center;
+    }
+    .quest-container > h2{
+        text-align: center;
+    margin: auto;
+    }
+}
+@media (max-width:768px){
+    .quest-container{
+        margin: 0 15px;
+    }
+    .quest-container > h2{
+        font-size: 28px;
+        line-height: 38px;
+        text-align: center;
+        margin-top: 30px;
+
+    }
+    .accordion__item{
+        min-width: unset
+    }
+    .accordion__header{
+        font-size: 18px;
+
+    }
+}
+@media (max-width: 550px){
+   .content{
+    margin: 20px auto;
+   }
+   .box-quest > h3{
+    font-size: 24px;
+    line-height: 24px;
+   }
+
+}
