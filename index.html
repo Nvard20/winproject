@@ -23,7 +23,7 @@
             </div>
             <div class="account-set">
                 <a href="#" class="login">Войти</a>
-                <a href="#" class="register">Регистрация</a>
+                <a href="#" class="register active">Регистрация</a>
             </div>
         </div>
     </header>
@@ -169,11 +169,11 @@
                 <li>Обнаружили фейк аккаунтов</li>
             </ul>
             <div class="choice">
-                <a href="#" class="register">Общий</a>
-                <a href="#" class="ejd">Ежедневный</a>
+                <a data-href="general" class="register active">Общий</a>
+                <a data-href="daily" class="ejd">Ежедневный</a>
             </div>
         </div>
-        <div class="grafik">
+        <div id="general" class="grafik">
             <figure class="highcharts-figure">
                 <div id="container"></div>
              
@@ -188,7 +188,7 @@
     <div class="payment-section">
         <div class="paymhd">
             <div class="pay-text">
-                Оплаты достоин только <span> качественный трафик</span>
+                Оплаты достоин только <span> качественный </span><div class="tr">трафик</div>
             </div>
             <div class="social">
                 <img src="img/sosial.png" alt="" class="deskimg">
@@ -242,15 +242,73 @@
         <h2>Этапы работы</h2>
         <div class="etap-content">
            <div class="etbtn">
-            <div class="choice">
-                <a href="#" class="register">Рекламодатель</a>
-                <a href="#" class="ejd">Вебмастер</a>
+            <div class="choice ">
+                <a data-href="recomendatel" class="register active">Рекламодатель</a>
+                <a data-href="webmaster" class="ejd">Вебмастер</a>
             </div>
            </div>
-           <div class="functionimg">
-               <img src="img/etap.png" alt="" class="et1">
-               <img src="img/mob.png" alt="" class="et2">
+           <div class="functionimg show tab-item" id="recomendatel">
+               <div class="funchd">
+                   <div class="func1">
+                       <p>Назначь цену за подписчика </p>
+                       <p> Условия выплаты</p>
+                   </div>
+                   <div class="func2">
+                    <p>Источники трафика </p>
+                    <p>Выплату за продажу</p>
+                    </div>
+             
+               </div>
+               <div class="allff">
+                <div class="function">
+                    <div class="md">
+                        <img src="img/vectors/md.png" alt="">
+                    </div>
+                    <div class="f1">
+                        <img src="img/vectors/point.png" alt="">
+                        <p>возьми инвайт ссылку</p>
+                    </div>
+                    <div class="f2">
+                        <img src="img/vectors/point.png" alt="">
+                        <p>рекламируй самостоятельно или</p>
+    
+                    </div>
+                    <div class="f3">
+                        <img src="img/vectors/point.png" alt="">
+    
+                    </div>
+                    <div class="f4">
+                        <p>
+                            наглядно смотри, какая связка дает прибыль, качественную аудитории, отключай неработающие связки
+                        </p>
+                    </div>
+                    <div class="f5">
+                        <img src="img/vectors/v5.png" alt="">
+                        <p>масштабируй рабочую связку,<span> получай профит</span></p>
+                    </div>
+                    <div class="f6">
+                        <img src="img/vectors/4.png" alt="">
+                    </div>
+                    </div>
+                    <div class="function2">
+                        <div class="vek1">
+                            <img src="img/vectors/v1.png" alt="">
+                            <p>прими предложения вебмастеров</p>
+                        </div>
+                        <div class="vek2">
+                            <img src="img/vectors/v8.png" alt="">
+                        </div>
+                        <div class="vek3">
+                            <img src="img/vectors/v9.png" alt="">
+                            <p><span>Оцени работу вебмастера.</span> Выбери вебмастера, который дает наиболее качественную аудиторию за меньшие деньги</p>
+                        </div>
+                        <div class="vek4">
+                            <img src="img/vectors/9.png" alt="">
+                        </div>
+                    </div>
+               </div>
            </div>
+	
 
            <div class="funcbtn">
             <p class="txvv">Получай ожидаемый, прогнозируемый профит</p>
@@ -336,7 +394,7 @@
             </div>
             <div class="account-set">
                 <a href="#" class="login">Войти</a>
-                <a href="#" class="register">Регистрация</a>
+                <a href="#" class="register active">Регистрация</a>
             </div>
         </div>
     </footer>
@@ -397,6 +455,19 @@
   }],
 
 });
+
+
+
+var choice = document.querySelectorAll('.choice a');
+if(choice){
+  choice.forEach(function(key, value){
+     key.onclick = function(){
+	   key.parentNode.querySelector('.active').classList.remove('active');
+	   key.classList.add('active');
+	 }
+  })
+}
+
 </script>
 </body>
 </html>

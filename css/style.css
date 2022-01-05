@@ -1,4 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,500;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap');
+
 *{
     padding: 0;
     margin: 0;
@@ -55,6 +57,7 @@ transition: .1s;
     position: absolute;
     width: 100%;
     top: 19px;
+    z-index: 9999999999;
 }
 .login{
     font-family: Rubik;
@@ -74,7 +77,7 @@ font-weight: 500;
 font-size: 14px;
 line-height: 17px;
 color: #FFFFFF;
-background: linear-gradient(93.28deg, #3AA0FF 0.38%, #137CF9 54.07%, #0152F9 100%);
+
 border-radius: 5px;
 width: 140px;
 height: 40px;
@@ -458,6 +461,7 @@ left: -11px;
   
     .creattive {
         width: 265px;
+		margin: 25px auto 0;
     }        
     .wboxall{
         margin: 100px 35px;
@@ -471,6 +475,9 @@ left: -11px;
         margin: auto;
         margin-top: 0px;
     }
+	.wbicon{
+		margin: auto;
+	}
 }
 @media (max-width:1000px){
     .wboxall{
@@ -649,6 +656,10 @@ background: #FF3A3A !important;
     border-radius: 20px;
     align-items: center;
 }
+.rct{
+    background: #eff6ff;
+
+}
 .ejd{
     font-family: Rubik;
     font-style: normal;
@@ -656,7 +667,7 @@ background: #FF3A3A !important;
     font-size: 14px;
     line-height: 17px;
     color: #0065F3;
-
+    cursor: pointer;
 }
 .choice > a{
     margin-right: 30px;
@@ -713,6 +724,7 @@ max-width: 635px;
 }
 .social{
     max-width: 320px;
+    filter: drop-shadow(0px 0px 60px rgba(0, 0, 0, 0.08));
 }
 .social > img{
     width: 100%;
@@ -871,8 +883,12 @@ position: absolute;
 }
 .funcbtn{
     position: relative;
-    max-width: 1146px;
+    max-width: 665px;
     margin: auto;
+}
+.funcbtn > .wbbtn{
+    margin-right: 115px;
+
 }
 @media (max-width:1000px){
     .etap-content{
@@ -1182,3 +1198,354 @@ color: rgba(0, 0, 0, 0.8);
 .highcharts-data-table tr:hover {
   background: #f1f7ff;
 }
+.functionimg:not(.show){
+	display: none;
+}
+.active{
+	background: linear-gradient(93.28deg, #3AA0FF 0.38%, #137CF9 54.07%, #0152F9 100%);
+	height: 40px;
+    width: 120px;
+    
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    color: white;
+}
+.choice a.active{
+	background: linear-gradient(93.28deg, #3AA0FF 0.38%, #137CF9 54.07%, #0152F9 100%);
+	height: 40px;
+    width: 120px;
+    
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    color: white;
+}
+.choice a.active:not(.register){
+	margin-right: 0;
+	margin-left: 15px;
+}
+.choice a.register:not(.active){
+	margin-right: 0 !important;
+    margin-left: 16px;
+	color: #0065F3;
+}
+@media all and (min-width: 1580px){
+	.main-land{
+		background-position: bottom;
+        min-height: 830px;
+	}
+}
+@media all and (max-width: 1199px) and (min-width: 992px){
+	.main-land{
+		min-height: 800px;
+	}
+}
+@media all and (max-width: 1290px) and (min-width: 992px){
+	.boxcont div[class*="-icon"] img,
+    .boxcont div[class*="icon-"] img{
+		width: 100%;
+		height: 120px;
+		object-fit: contain;
+		display: block;
+   }
+   .box-icon {
+		transform: none;
+		text-align: center;
+	}
+	.icon-mid {
+		transform: none;
+		text-align: center;
+		display: block;
+	}
+}
+.account-set > .register{
+    filter: drop-shadow(0px 0px 60px rgba(48, 150, 253, 0.7));
+}
+.tr{
+    color: #389efe !important
+}
+.funchd{
+    max-width: 250px;
+    margin: auto;
+    position: relative;
+}
+.function{
+    margin: 115px 30px;
+
+
+}
+.function > div > p{
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 28px;    
+    text-align: left;
+    position: relative;
+    color: rgba(0, 0, 0, 0.8);
+    padding-top: 5px;
+
+}
+.func1 > p,.func2 > p{
+    
+font-family: Rubik;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 28px;
+/* or 156% */
+
+text-align: center;
+
+color: rgba(0, 0, 0, 0.8);
+}
+.func1::before{
+    position: absolute;
+    content: "";
+    background-image: url(../img/v1.png);
+    width: 50px;
+    height: 41px;
+    left: -17px;
+    top: 15px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.func1::after{
+    position: absolute;
+    content: "";
+    background-image: url(../img/v2.png);
+    width: 38px;
+    height: 41px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    right: 0px;
+    bottom: -22px;
+}
+.func2::before{
+    position: absolute;
+    content: "";
+    background-image: url(../img/v3.png);
+    width: 30px;
+    height: 41px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    bottom: 7px;
+
+}
+.func1{
+    position: relative;
+}
+.func2{
+    margin-top: 6px;
+    position: relative;
+}
+.f1{
+    position: relative;
+    max-width: 200px;
+
+}
+.f2{
+    position: relative;
+    max-width: 300px;
+    margin-top: 80px;
+    right: 37px;
+    top: 48px;
+}
+.f3{
+    position: relative;
+    margin-top: 210px;
+    right: -23px;
+}
+.f2::after{
+    position: absolute;
+    background-image: url(../img/vectors/3.png);
+    background-repeat: no-repeat;
+    content: "";
+    width: 187px;
+    height: 167px;
+}
+.f2 > img{
+    left: 125px;
+    top: -5px;
+    position: absolute;
+}
+.f2::before{
+    position: absolute;
+    content: "";
+    background-image: url(../img/vectors/2.png);
+    background-repeat: no-repeat;
+    width: 39px;
+    height: 99px;
+    right: 101px;
+    top: -114px;
+}
+.f1::before{
+    position: absolute;
+    content: "";
+    background-image: url(../img/vectors/1.png);
+    background-repeat: no-repeat;
+    width: 201px;
+    height: 101px;
+    left: 26px;
+    bottom: 31px;
+}
+.f1 > img{
+    position: absolute;
+    left: 33px;
+    top: -9px;
+}
+.f4{
+    position: relative;
+    max-width: 815px;
+    left: 54%;
+    top: -28px;
+}
+.f4  >p {
+    font-family: Rubik;
+font-style: normal;
+font-weight: normal;
+font-size: 17px;
+line-height: 28px;
+/* or 156% */
+
+text-align: center !important;
+
+color: rgba(0, 0, 0, 0.8);
+}
+.f5 > p{
+    font-family: Rubik;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 28px;
+/* or 156% */
+
+text-align: center !important;
+
+color: rgba(0, 0, 0, 0.8);
+
+}
+
+.f5 > p > span{
+    color: #137CF9;
+}
+.f5 > img{
+    width: 188px;
+    display: block;
+    margin: auto;
+}
+.f5{
+    max-width: 316px;
+    position: relative;
+}
+.f5 > p{
+    position: absolute;
+    left: -156px;
+    max-width: 305px;
+}
+.f6{
+    margin-top: 156px;
+    margin-left: -230px;
+
+}
+.f6 > img{
+    width: 100%;
+    height: 100%;
+}
+.allff{
+    display: flex;
+    justify-content: center;
+    max-width: 1000px;
+    margin: auto;
+
+}
+.vek1{
+    max-width: 300px;
+
+}
+.vek1 > img{
+    width: 270px;
+}
+.vek1 > p{
+    font-family: Rubik;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 28px;
+text-align: center;
+
+color: rgba(0, 0, 0, 0.8);
+}
+.vek2{
+    max-width: 300px;
+    margin-top: 46px;
+
+}
+.vek2 > img{
+width: 100%;
+
+margin-left: 90px;
+
+}
+.vek3{
+    position: relative;
+    margin-top: 73px;
+    max-width: 430px;
+    margin-right: 42px;
+
+}
+.vek4{
+    max-width: 300px;
+    margin-top: 29px;
+
+}
+.vek4 > img{
+    width: 100%;
+}
+.vek3 > img{
+    width: 100%;
+
+}
+.vek3 > p{
+    font-family: Rubik;
+font-style: normal;
+font-weight:400;
+font-size: 18px;
+line-height: 28px;
+/* or 156% */
+
+text-align: center;
+}
+.vek3 > p > span{
+    color: #137CF9;
+}
+.allff > div{
+    max-width: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;}
+    .md{
+        width: 250px;
+        position: absolute;
+        left: 77%;
+        top: 96px;
+        transform: rotate(
+    -3deg);
+    }
+    .md > img{
+        width: 100%;
+    }
+    .function{
+        position: relative;
+    }
+    @media (max-width: 1100px){
+        .allff{
+            max-width: 588px;
+
+        }
+    }
