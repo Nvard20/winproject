@@ -894,10 +894,7 @@ position: absolute;
     .etap-content{
         background-image: unset;
     }
-    .txvv{
-     display: none;
-    
-    }
+
     .etap-container > h2{
         font-size: 32px;
     }
@@ -1496,7 +1493,7 @@ margin-left: 90px;
     position: relative;
     margin-top: 73px;
     max-width: 430px;
-    margin-right: 42px;
+    margin-right: 20px;
 
 }
 .vek4{
@@ -1548,4 +1545,167 @@ text-align: center;
             max-width: 588px;
 
         }
+        .vek3{
+            max-width: 252px;
+    margin-right: -184px;
+
+        }
     }
+@media (max-width: 1000px){
+   .function > div > p,.function2 > div > p{
+       font-size: 16px !important;
+       text-align: center !important;
+       line-height: 20px;
+
+   }
+   .f2::after{
+       width: 98px;
+   }
+   .f3{
+    margin-top: 198px;
+    right: 21px;
+   }
+   .md{
+    width: 173px;
+    position: absolute;
+    left: 88%;
+   }
+   .vek2 {
+    max-width: 188px;}
+    .f6{
+        margin-top: 0px;
+
+    }
+    .f5 > p{
+        left: -30px;
+
+    }
+    .allff {
+        max-width: 318px;
+    }
+    .f2::before{
+        right: 22px;
+
+    }
+}
+@media (max-width: 790px){
+    .f6{
+        margin-left: 0;
+    }
+    .vek4{
+        max-width: 220px;
+        margin-top: 0;
+    }
+    .vek3{
+        margin-right: 0;
+    }
+    .f5{
+        margin-top: 40px;
+
+    }
+    .f6{
+        max-width: 160px;
+    }
+    .funcbtn > .wbbtn{
+        margin-right: 0;
+    }
+    .txvv{
+        position: unset;
+        margin: 20px auto;
+
+    }
+    .function{
+        margin-bottom: 10px;
+    }
+ 
+    .f2::before{
+        right: 10px;
+
+    }
+    .f2::after {
+        width: 88px;
+        left: 80px;
+    }
+    .f3{
+        right: -72px;
+
+    }
+    .vek1 > img {
+        width: 193px;
+    }
+    .f1::before{
+        width: 161px;
+        height: 120px;
+    }
+    .vek2 > img {
+        width: 100%;
+        margin-left: 0px;
+    }
+   
+    .f2{
+        right: 20px;
+    }
+    .vek2{
+        margin-top: 157px;
+
+    }
+    .vek3{
+        margin-top: 161px;
+
+    }
+    .f4 {
+        top: 0px;
+        left: 113px;
+    }
+    .vek4 > img {
+        width: 50%;
+    }
+}
+@media (max-width:500px){
+    .f5 > p {
+        left: 0px;
+    }
+    .f2{
+        right: 0;
+    }
+    .f2 > img{
+        left: 66px;
+
+    }
+    .f1 {
+        max-width: 140px;
+    }
+    .vek2{
+        max-width: 164px;
+
+    }
+    .f6{
+        max-width: 130px;
+    }
+    .vek3 {
+        margin-right: 20px;
+        margin-top: 260px;
+
+    }
+    .f5{
+        max-width: 137px;
+        margin-left: -35px;
+
+    }
+    .f2::after {
+        width: 88px;
+        left: 31px;
+    }
+}
+@media (max-width:400px){
+    .function {
+        margin: 115px 8px;
+        margin-bottom: 10px;
+    }
+    .f5{
+        max-width: 77px;
+
+    }
+    .f5 > img {
+        width: 120px;}
+}
