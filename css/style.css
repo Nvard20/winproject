@@ -1775,3 +1775,195 @@ a[class*=btn-] {
 .tab-content .tab-item:not(.show-tab) {
     display: none;
 }
+/* reg/log */
+.modal-container{
+    max-width: 550px;
+    margin: auto;
+    padding: 20px;
+    position: relative;
+}
+.close{
+    position: absolute;
+    cursor: pointer;
+    right: 20px;
+    top: 20px;
+}
+.close > img{
+    width: 24px;
+    height: 24px;
+}
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    z-index: 9999999999;
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    position: relative;
+    margin: auto;
+    padding: 0;
+    max-width: 550px;
+    border-radius: 10px;
+    background: #FFFFFF;
+    box-shadow: 0px 15px 35px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    overflow-y: auto;
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+
+  }
+  
+  /* Add Animation */
+  @-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+  }
+  
+  @keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+  }
+  
+  /* The Close Button */
+
+  
+  
+  .header-modal{
+      max-width: 510px;
+      margin: 20px auto;
+      display: flex;
+      justify-content: center;
+      border-bottom: 1px solid #E6E8EB;
+
+  }
+  
+
+  .header-modal > div{
+    font-family: Rubik;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 21px;
+width: 100%;
+text-align:  center;
+color: rgba(0, 0, 0, 0.35);
+padding: 20px 0;
+cursor: pointer;
+
+
+}
+.tab-active{
+    color: #137CF9 !important;
+    position: relative;
+}
+.tab-active::after{
+    width: 100%;
+    height: 5px;
+    background: #137CF9;
+    position: absolute;
+    content: "";
+    bottom: -2px;
+    right: 0;
+    border-radius: 10px;
+}
+.form-box{
+    max-width: 510px;
+    margin: auto;
+}
+.item-input{
+    width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+label{
+    display: flex;
+
+}
+.remember{
+    font-family: Rubik;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 21px;
+
+color: rgba(0, 0, 0, 0.35);
+}
+.remember-item{
+    margin-top: 60px;
+}
+label > span{
+    font-family: Rubik;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 21px;
+
+color: rgba(0, 0, 0, 0.85);
+margin-left: 10px;
+}
+#radio{
+    width: 20px;
+    height: 20px;
+}
+.item-input > input{
+    width: 91%;
+    font-family: Rubik;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 21px;
+
+color: rgba(0, 0, 0, 0.35);
+padding: 15px 20px;
+background-color: #F0F2F5;
+border: none;
+border-radius: 5px;
+outline: none;
+
+}
+.item-input > a{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-family: Rubik;
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 21px;
+
+color: #FFFFFF;
+background: linear-gradient(93.28deg, #3AA0FF 0.38%, #137CF9 54.07%, #0152F9 100%);
+border-radius: 7px;
+padding: 15px 0;
+}
+@media (max-width: 767px){
+    .modal-content{
+        margin: 15px;
+    }
+    .remember,label > span{
+        font-size: 14px;
+    }
+    #radio {
+        width: 15px;}
+    .item-input > input{
+        font-size: 16px;
+
+    }
+    .header-modal > div{
+        font-size: 16px;
+    }
+}
