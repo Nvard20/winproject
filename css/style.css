@@ -29,6 +29,15 @@ a{
 
     display: flex;
     justify-content: space-between;
+    align-items: center;
+
+}
+.menu-advertise > ul > li > a:hover{
+    color: unset !important;
+}
+.menu-advertise > ul > li{
+    padding: 0 10px;
+
 }
 .account-section{
     display: flex;
@@ -1933,6 +1942,9 @@ background-color: #F0F2F5;
 border: none;
 border-radius: 5px;
 outline: none;
+}
+.item-input{
+    position: relative;
 
 }
 .item-input > a{
@@ -1950,7 +1962,65 @@ background: linear-gradient(93.28deg, #3AA0FF 0.38%, #137CF9 54.07%, #0152F9 100
 border-radius: 7px;
 padding: 15px 0;
 }
-@media (max-width: 767px){
+
+#register-box{
+    display: none;
+}
+.point{
+    background: rgba(0, 0, 0, 0.35);
+border-radius: 30px;
+width: 5px;
+height: 5px;
+position: absolute;
+top: 50%;
+    right: 22px;
+}
+.select > select {
+    /* Reset Select */
+    appearance: none;
+    outline: 0;
+    border: 0;
+    box-shadow: none;
+    /* Personalize */
+    flex: 1;
+    padding: 15px 20px;
+    background-color: #F0F2F5;
+    background-image: none;
+    cursor: pointer;
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    color: rgb(130 131 131);
+
+
+  }
+  /* Remove IE arrow */
+  select::-ms-expand {
+    display: none;
+  }
+  /* Custom Select wrapper */
+  .select {
+    position: relative;
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 5px;
+  }
+  /* Arrow */
+  .select::after {
+    content: '';
+    background-image: url(../img/d.png);
+    position: absolute;
+    top: 15px;
+    right: 0;
+    padding: 1em;
+    transition: .25s all ease;
+    pointer-events: none;
+    background-repeat: no-repeat;
+  }
+  @media (max-width: 767px){
     .modal-content{
         margin: 15px;
     }
@@ -1966,4 +2036,15 @@ padding: 15px 0;
     .header-modal > div{
         font-size: 16px;
     }
+    .select > select{
+        font-size: 16px;
+
+    }
+}
+
+.header-advertise{
+    
+    background-image: url(../img/footer.png);
+    background-repeat: no-repeat;
+
 }

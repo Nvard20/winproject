@@ -26,8 +26,8 @@
                 </ul>
             </div>
             <div class="account-section">
-                <a href="#" class="login" id="myBtn">Войти</a>
-                <a href="#" class="register active">Регистрация</a>
+                <a href="#" class="login " id="myBtn">Войти</a>
+                <a href="#" class="register active" id="myBtn2">Регистрация</a>
             </div>
         </div>
     </header>
@@ -550,10 +550,10 @@
                 <img src="img/plus.png" alt="">
             </div>
             <div class="header-modal">
-                <div class=" tab-active">Вход</div>
-                <div class="">Регистрация</div>
+                <div class="tab-login tab-active">Вход</div>
+                <div class="tab-register">Регистрация</div>
             </div>
-            <div class="form-box">
+            <div class="form-box" id="login-box">
                 <form class="form">
                     <div class="item-input">
                         <input type="text" placeholder="E-mail">
@@ -570,6 +570,37 @@
                     </div>
                     <div class="item-input">
                         <a href="#">Войти</a>
+                    </div>
+                </form>
+            </div>
+            <div class="form-box" id="register-box">
+                <form class="form">
+                    <div class="item-input">
+                        <div class="select">
+                            <select>
+                              <option value="1">Специальность</option>
+                              <option value="2">No JS</option>
+                              <option value="3">Nice!</option>
+                            </select>
+                          </div>
+                    </div>
+                    <div class="item-input">
+                        <input type="text" placeholder="Ваше имя">
+                        <div class="point"></div>
+                    </div>
+                    <div class="item-input">
+                        <input type="text" placeholder="E-mail">
+                        <div class="point"></div>
+
+                    </div>
+                    <div class="item-input">
+                        <input type="password" placeholder="Пароль">
+                        <div class="point"></div>
+
+                    </div>
+                  
+                    <div class="item-input">
+                        <a href="#">Создать аккаунт</a>
                     </div>
                 </form>
             </div>
