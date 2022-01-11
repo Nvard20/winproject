@@ -2145,7 +2145,6 @@ border-top-right-radius: 7px !important;
 .advertise-container{
     background: #F0F2F5;
     margin-top: 0px;
-    margin-bottom: 15px;
     padding-top: 34px;
     padding-bottom: 20px;
 }
@@ -2542,4 +2541,43 @@ align-items: center;
 }
 .sources{
     display: none;
+}
+.top-copyright{
+    display: flex;
+    align-items: center;
+    font-family: Rubik;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 22px;
+/* identical to box height, or 157% */
+
+display: flex;
+align-items: center;
+
+/* Character / Secondary .45 */
+
+color: rgba(0, 0, 0, 0.45);
+justify-content: center;
+
+}
+.copyright-container{
+    max-width: 224px;
+    margin: 30px auto;
+
+}
+.top-copyright > img{
+    margin: 0 20px;
+    width: 15px;
+}
+.bottom-copyright{
+    font-family: Rubik;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 22px;
+display: flex;
+align-items: center;
+color: rgba(0, 0, 0, 0.45);
+margin-top: 10px;
 }
