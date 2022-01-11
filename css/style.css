@@ -2385,6 +2385,11 @@ color: #000000;
     .photo{
         width: 70px;
         height: 70px;
+        object-fit: contain;
+    }
+    .specialization{
+        margin-left: 10px;
+        margin-right: 10px;
     }
 }
 
@@ -2399,4 +2404,48 @@ color: #000000;
     margin-top: 16px;
 
 }
+}
+@media (max-width:767px){
+    .control-inner{
+        flex-wrap: wrap;
+
+    }
+    .control-seting{
+        margin-right: 18px;
+
+    }
+    .name-specialization-header{
+        margin-left: 10%;
+    }
+    .more-down{
+        right: 50%;
+        bottom: 5px;
+    }
+    .tour-content{
+        margin-left: 0;
+    }
+    .part-tours{
+        flex-direction: column;
+    }
+    .tour-content{
+        display: flex;
+    flex-direction: column;
+    margin-top: -65px;
+    }
+    .title{
+        margin-left: 80px;
+        font-size: 14px;
+    }
+    .tour-content > h5{
+        margin-left: 80px;
+        font-size: 16px;
+
+    }
+    .add-chanel > span{
+        display: none
+    }
+    .invite-test > p{
+        font-size: 13px;
+
+    }
 }
