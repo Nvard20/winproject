@@ -2318,12 +2318,13 @@ font-size: 14px;
 line-height: 20px;
 }
 .payment-content{
-    background: rgba(19, 124, 249, 0.05);
-    border-radius: 7px;
     width: 100%;
 }
 .payment-inner{
     padding: 13px 16px;
+    background: rgba(19, 124, 249, 0.05);
+    border-radius: 7px;
+    margin-bottom: 10px;
 }
 .payment-item{
     font-family: Rubik;
@@ -2448,4 +2449,97 @@ color: #000000;
         font-size: 13px;
 
     }
+}
+.description > p{
+    font-family: Rubik;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 20px;
+
+color: #000000;
+}
+.description > h6{
+    
+font-family: Rubik;
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 24px;
+
+color: #000000;
+margin-bottom: 7px;
+}
+.description{
+    max-width: 410px;
+    margin-bottom: 20px;
+}
+.tours-texts{
+    width: 100%;
+
+}
+.description > ul > li{
+    font-family: Rubik;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 20px;
+color: #000000;
+list-style: disc;
+
+}
+.description > ul {
+    margin-left: 15px;
+
+}
+.general-more{
+    display: none;
+}
+.rotate{
+    transform: rotate(
+        180deg);
+}
+.green{
+    display: flex;
+    align-items: center;
+    font-family: Rubik;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 18px;
+/* identical to box height, or 129% */
+
+text-align: right;
+
+/* #1EE426 */
+
+color: #1EE426;
+
+}
+.red{
+    display: flex;
+    align-items: center;
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    /* identical to box height, or 129% */
+    
+    text-align: right;
+    
+    color: #F90F0F;
+    
+}
+.green > span,.red > span{
+    margin-left: 2px;
+}
+.blue{
+    
+color:#137CF9;
+display: flex;
+align-items: center;
+}
+.sources{
+    display: none;
 }
