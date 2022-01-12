@@ -2593,6 +2593,7 @@ tr:first-child{
 tr{
     height: 50px;
     border-radius: 7px;
+    border-bottom: 1px solid rgba(19, 124, 249, 0.05);
 }
 th{
     font-family: Rubik;
@@ -2727,4 +2728,47 @@ text-align: center;
 /* Character/Title .85 */
 
 color: rgba(0, 0, 0, 0.85);
+}
+@media (max-width:1000px){
+    .header-payment-table{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+@media (max-width:767px){
+    .comment{
+        width: unset;
+    }
+    .table-structure{
+        overflow: auto;
+    }
+    td,th{
+        font-size: 12px;
+        white-space: nowrap;
+    }
+    .pagination-content {
+        display: flex;
+        align-items: start;
+        flex-direction: column;
+    }
+    .pagination {
+        display: flex;
+        margin-top: 20px;
+    }
+    .pagination > a{
+        width: 24px;
+        height: 24px;
+font-size: 12px;
+line-height: 12px;
+margin-right: 5px;
+
+    }
+    .pagination-container{
+        margin: 0 15px;
+
+    }
+}
+.active-number{
+    border-color: #389efe !important;
+    color: #389efe !important;
 }
