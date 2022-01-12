@@ -60,4 +60,5 @@ $('.tab-login').click(function() {
     $('#register-box').css({'display':'none'});
     $('#login-box').css({'display':'block'});
 
-})
+});
+///////////////// btns

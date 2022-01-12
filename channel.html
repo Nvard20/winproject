@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header-advertise">
+        <div class="inner-header">
+            <a class="logo" href="/"><img src="img/logo.png" alt=""></a>
+            <div class="menu menu-advertise">
+                <ul>
+                    <li><a href="#" class="user-link">Постбэки</a></li>
+                    <li ><a href="#" class="active">Личный кабинет</a></li>
+                    <li><a href="#" class="user-link">Платежи</a></li>
+
+                </ul>
+            </div>
+           <div class="balance-btns">
+                <div class="balance">
+                    <div class="count user-link">4000.00 ₽</div>
+                    <a href="#" class="plus"><img src="img/plus-circle.png" alt=""></a>
+                </div>
+                <a href='' class="logout">
+                    <img src="img/Logout.png" alt="">
+                </a>
+           </div>
+        </div>
+    </header>
+    <div class="advertise-container">
+        <div class="specialization">
+            <div class="inner-specialization">
+                <div class="user-icon"><img src="img/icon-wrapper.png" alt=""></div>
+                <div class="name-specialization-header channel-header">
+                    <div class="name">Leonid</div>
+                    <span class="elipse"></span>
+                    <div class="name-wrapper">рекламодатель</div>
+                </div>
+            </div>
+        </div>
+        <div class="specialization">
+            <div class="inner-specialization">
+                <div class="user-icon"><img src="img/asd.png" alt=""></div>
+                <div class="name-specialization">
+                    <div class="name">Добавить канал (чат)</div>
+                  
+                </div>       
+            </div>
+
+            <div class="channel-content">
+                <p>Сначала добавьте нашего бота @bot_neznaykabot в ваш канал или чат. Дайте ему права администратора, разрешите выдавать пригласительные ссылки. Затем заполните форму ниже</p>
+                <ul>
+                    <li>Чтобы узнать ID вашего канала отправьте его @username боту @GetAnyTelegramIdBot</li>
+                    <li>Чтобы узнать ID вашего чата отправьте инвайт-ссылку боту @GetAnyTelegramIdBot</li>
+                    <li>Обратите внимание, что ID канала (чата) начинается с -100</li>
+                </ul>
+            </div>
+            <div class="form-chanel">
+                <form action="" class="form-box-chanel">
+                    <div class="form-item form-upload">
+                        <p>Аватар:</p>
+
+                        <label for="custom-file-upload" class="filupp">
+                            <span class="filupp-file-name js-value">Добавить файл</span>
+                            <input type="file" name="attachment-file" value="1" id="custom-file-upload"/>
+                          </label>
+                    </div>
+                    <div class="form-item">
+                        <p>Наименование канала:</p>
+                        <input type="text" placeholder="Введите имя канала">
+                    </div>
+                    <div class="form-item">
+                        <p>ID канала или чата (например: -1001193705410):
+                            
+                            </p>
+                        <input type="text" placeholder="Введите ID">
+                    </div>
+                    <div class="form-item">
+                        <div class="choice ">
+                            <a data-href="recomendation" class="free-btn active">Бесплатный</a>
+                            <a data-href="webmaster" class="free-btn">Продажи</a>
+                        </div>
+                    </div>
+                    <div class="form-item">
+                        <p>Тема канала:
+                       
+                            
+                            </p>
+                       <select >
+                           <option value="Спорт">Спорт</option>
+                           <option value="1">Спорт</option>
+                           <option value="2">Спорт</option>
+                           <option value="3">Спорт</option>
+
+                       </select>
+                    </div>
+                    <div class="form-item">
+                        <p>Описание:</p>
+                        <textarea placeholder="Кратко о вашем канале (чате)"></textarea>
+                    </div>
+                    <div class="form-item form-item-btn">
+                        <p>
+                            Преимущества:
+                             
+                            </p>
+                        <input type="text" placeholder="Первое преимущество">
+                        <a href="#" class="active">Добавить</a>
+                    </div>
+                    <div class="form-item">
+                        <p>Куплю подписчиков:</p>
+                        <input type="text" placeholder="Количество подписчиков">
+                    </div>
+                    <div class="form-item">
+                        <p>Стоимость за 1 подп. (₽)</p>
+                        <input type="text" placeholder="Цена за подписчика">
+                    </div>
+                    <div class="form-item form-item-btn">
+                        <p>
+                            При условии дней на канале
+                            :                             
+                            </p>
+                        <input type="number" placeholder="1 - 7" min="1" max="7">
+                        <span>(Максимальное время холда оплаты для оценки трафика)</span>
+                        <a href="#" class="active">Добавить</a>
+                    </div>
+                    <div class="form-item form-item-btn">
+                        <p>Допустимые источники:</p>
+                        <div class="group-radio">
+                            <label >
+                                Инстаграм
+                                <input type="radio" checked value="1" name="social">
+                            </label>
+                            <label >
+                                Телеграм
+                                <input type="radio" value="2" name="social">
+                            </label>
+                            <label >
+                                Спам траф
+                                <input type="radio" value="3" name="social">
+                            </label>
+                            <label >
+                                ТикТок
+                                <input type="radio" value="4" name="social">
+                            </label>
+                            <label >
+                                Рассылки по базам
+                                <input type="radio" value="5" name="social">
+                            </label>
+                        </div>
+                        <a href="#" class="active">Добавить</a>
+
+                    </div>
+                    <div class="channel-button">
+                        <a href="#" class="active">Добавить канал</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="copyright-container">
+           <div class="top-copyright">
+               <span>О проекте</span>
+               <img src="img/Thunderbolt.png" alt="">
+               <span>Контакты</span>
+           </div>
+           <div class="bottom-copyright">Copyright ©2021 smmwinwin.com</div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script>
+      $(document).ready(function() {
+
+// get the name of uploaded file
+  $('input[type="file"]').change(function(){
+      var value = $("input[type='file']").val();
+      $('.js-value').text(value);
+  });
+
+});
+/////////////btns
+
+var choice = document.querySelectorAll('.choice a');
+		if(choice){
+		  choice.forEach(function(key, value){
+			 key.onclick = function(){
+			   key.parentNode.querySelector('.active').classList.remove('active');
+			   key.classList.add('active');
+                           var attr= key.getAttribute('data-href');
+                           if(attr){
+                              var items = key.parentNode.parentNode.parentNode.querySelectorAll('.tab-content .tab-item');
+                              items.forEach(function(key, value){
+                                  key.classList.remove('show-tab');
+                              })
+                              var item = key.parentNode.parentNode.parentNode.querySelector('.tab-content #' + attr);
+                              item.classList.add('show-tab');
+                              
+                           }
+			 }
+		  })
+		}
+
+  </script>
+</body>
+</html>
