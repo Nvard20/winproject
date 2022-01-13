@@ -78,12 +78,7 @@
                             </p>
                         <input type="text" placeholder="Введите ID">
                     </div>
-                    <div class="form-item">
-                        <div class="choice ">
-                            <a data-href="recomendation" class="free-btn active">Бесплатный</a>
-                            <a data-href="webmaster" class="free-btn">Продажи</a>
-                        </div>
-                    </div>
+                 
                     <div class="form-item">
                         <p>Тема канала:
                        
@@ -130,6 +125,17 @@
                             <a href="#" class="active">Добавить</a>
                        </div>                  
                       </div>
+                      <div class="form-item form-item-btn">
+                        <p>
+                            Продажа 1:
+                                              
+                            </p>
+                        <input type="text" placeholder="Название продажи" class="sale">
+                        <input type="text" placeholder="Стоимость" class="sale">
+                        <div class="append"> 
+                            <a href="#" class="active">Добавить</a>
+                       </div>                  
+                      </div>
                     <div class="form-item form-item-btn">
                         <p>Допустимые источники:</p>
                         <div class="group-radio">
@@ -159,9 +165,36 @@
 
                             </label>
                         </div>
-                      <div class="append"> 
-                           <a href="#" class="active">Добавить</a>
-                      </div>
+                        <div class="append"> 
+                            <a href="#" class="active">Добавить</a>
+                       </div>
+                        </div>
+                        <div class="form-item form-item-btn">
+                            <p>
+                                Источник:
+                                                  
+                                </p>
+                            <input type="text" placeholder="Название источника" class="sale">
+               
+                             <section id="content">
+                                <div class="dropdown closed">
+                                  <div class="title-name">Разрешено</div>
+                                  <div class="dropdown-menu">
+                                    <ul>
+                                      <li> Разрешено</li>
+                                      <li>Imelda Silva</li>
+                                      <li>Marah Mueller</li>
+                            
+                                    </ul>
+                                  </div>
+                                </div>
+                              </section>
+                         
+                            <div class="append"> 
+                                <a href="#" class="active">Добавить</a>
+                           </div>                  
+                          </div>
+                  
                     </div>
                     <div class="channel-button">
                         <a href="#" class="active">Добавить канал</a>
@@ -191,25 +224,36 @@
 });
 /////////////btns
 
-var choice = document.querySelectorAll('.choice a');
-		if(choice){
-		  choice.forEach(function(key, value){
-			 key.onclick = function(){
-			   key.parentNode.querySelector('.active').classList.remove('active');
-			   key.classList.add('active');
-                           var attr= key.getAttribute('data-href');
-                           if(attr){
-                              var items = key.parentNode.parentNode.parentNode.querySelectorAll('.tab-content .tab-item');
-                              items.forEach(function(key, value){
-                                  key.classList.remove('show-tab');
-                              })
-                              var item = key.parentNode.parentNode.parentNode.querySelector('.tab-content #' + attr);
-                              item.classList.add('show-tab');
-                              
-                           }
-			 }
-		  })
-		}
+var $container = $('.dropdown-menu'),
+    $list = $('.dropdown-menu ul'),
+    listItem = $list.find('li');
+
+$(".dropdown .title-name").click(function () {
+  if( $container.height() > 0) {
+    closeMenu(this);
+  } else {
+    openMenu(this);
+  }
+});
+
+$(".dropdown-menu li").click(function () {
+  closeMenu(this);
+});
+
+function closeMenu(el) {
+  $(el).closest('.dropdown').toggleClass("closed").find(".title-name").text($(el).text());
+  $container.css("height", 0);
+  $list.css( "top", 0 );
+}
+
+function openMenu(el) {
+  $(el).parent().toggleClass("closed");
+  
+  $container.css({
+    height: 200
+  })
+
+}
 
   </script>
 </body>
