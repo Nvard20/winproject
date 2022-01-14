@@ -3717,6 +3717,14 @@ max-width: 237px;
 }
 .subscriptions{
 border-radius: 10px !important;
+font-family: Rubik;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #0065F3;
+    cursor: pointer;
+    margin-left: 0px !important;
 }
 .grafice-statics-content{
     display: flex;
@@ -3852,4 +3860,7 @@ color: #333333;
         width: 95%;
 
       }
+  }
+  #pie2{
+      display: none;
   }

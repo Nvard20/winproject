@@ -149,11 +149,11 @@
             <div class="grafice-statics">
                 <div class="grafice-statics-content">
                     <div class="choice">
-                        <a  data-href="general-diagram"  class="register active subscriptions">Подписки</a>
-                        <a data-href="daily-diagram" class="second-link subscriptions">Продажи</a>
+                        <a  data-href="general-diagram"  class="active subscriptions " id="choice-one">Подписки</a>
+                        <a data-href="daily-diagram" class="subscriptions" id="choice-two">Продажи</a>
                     </div>
                 </div>
-               <div class="all-statics">
+               <div class="all-statics ">
                    <div class="grafice-one ">
                        <div class="explanation-container">
                            <div class="explanation">
@@ -178,7 +178,7 @@
                                  
                                   </figure>
                             </div>
-                            </div>
+                        </div>
                         <div class="tab-item" id="daily-diagram">
                 
                             <div class="schedule">
@@ -189,20 +189,7 @@
                             </div>
                             </div>
                      </div>
-                       <!-- <div class="tab-item show-tab" id="g">
-
-                        <figure class="highcharts-figure ">
-                            <div id="diagram"></div>
-                        
-                        </figure>
-                      </div> -->
-                      <!-- <div class="tab-item" id="d">
-
-                      <figure class="highcharts-figure">
-                        <div id="diagram2"></div>
-                     
-                      </figure>
-                      </div> -->
+                
                    </div>
                    
                    <div class="grafice-two">
@@ -228,10 +215,14 @@
                              <p>Подписались 14 291</p>
                         </div>
                     </div>
-                    <figure class="highcharts-figure">
-                        <div id="pie"></div>
-                      
-                      </figure>
+                        <figure class="highcharts-figure">
+                            <div id="pie"></div>
+                        
+                        </figure>
+                        <figure class="highcharts-figure">
+                            <div id="pie2"></div>
+                        
+                        </figure>
                    </div>
                </div>
             </div>
@@ -419,6 +410,58 @@ Highcharts.chart('pie', {
 ]
   }]
 });
+Highcharts.chart('pie2', {
+  chart: {
+    plotBackgroundColor: null,
+    plotBorderWidth: null,
+    plotShadow: false,
+    type: 'pie'
+  },
+  title: {
+    text: ''
+  },
+  tooltip: {
+    pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+  },
+  accessibility: {
+    point: {
+      valueSuffix: '%'
+    }
+  },
+  
+  plotOptions: {
+    pie: {
+      allowPointSelect: true,
+      cursor: 'pointer',
+      dataLabels: {
+        enabled: false
+      },
+      showInLegend: false
+    }
+  },
+  series: [{
+    name: 'Brands',
+    colorByPoint: true,
+    data: [{
+      name: 'Продажа 1',
+      y: 11.41,
+      sliced: true,
+      selected: true,
+      color:"#137CF9"
+    }, {
+      name: 'Продажа 2',
+      y: 5.84,
+      color: "#F90F0F"
+
+    }, {
+      name: 'Продажа 3',
+      y: 60.85,
+      color: '#B43AFF'
+
+    },
+]
+  }]
+});
 
 var choice = document.querySelectorAll('.choice a');
 		if(choice){
@@ -439,7 +482,14 @@ var choice = document.querySelectorAll('.choice a');
 			 }
 		  })
 		}
-
+        $('#choice-two').click(function(){
+            $('#pie').hide();
+            $('#pie2').show();
+        });
+        $('#choice-one').click(function(){
+            $('#pie').show();
+            $('#pie2').hide();
+        });
     </script>
 </body>
 </html>
