@@ -3468,3 +3468,45 @@ border-radius: 6px;
     }
   
 }
+.form-bot{
+    max-width: 565px;
+    margin: auto;
+    padding: 32px 0;
+}
+.radio-bot{
+    margin: auto;
+    margin-left: 113px;
+}
+.save > a{
+    background: linear-gradient(93.28deg, #3AA0FF 0.38%, #137CF9 54.07%, #0152F9 100%);
+border-radius: 3px;
+width: 150px;
+height: 40px;
+font-family: Rubik;
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 20px;
+/* identical to box height, or 143% */
+
+text-align: center;
+
+color: #FFFFFF;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.save{
+    max-width: 335px;
+    margin: auto;
+    margin-top: 45px;
+}
+.settings-copyright{
+    margin-top: 250px;
+}
+@media (max-width:600px){
+    .form-bot{
+        margin: 0 15px;
+
+    }
+}
