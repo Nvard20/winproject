@@ -149,12 +149,12 @@
             <div class="grafice-statics">
                 <div class="grafice-statics-content">
                     <div class="choice">
-                        <a  class="register active subscriptions">Подписки</a>
-                        <a  class="second-link subscriptions">Продажи</a>
+                        <a  data-href="general-diagram"  class="register active subscriptions">Подписки</a>
+                        <a data-href="daily-diagram" class="second-link subscriptions">Продажи</a>
                     </div>
                 </div>
                <div class="all-statics">
-                   <div class="grafice-one">
+                   <div class="grafice-one ">
                        <div class="explanation-container">
                            <div class="explanation">
                                 <span class="explanation-point-1"></span>
@@ -169,11 +169,42 @@
                                  <p>Подписались 14 291</p>
                             </div>
                        </div>
-                    <figure class="highcharts-figure">
-                        <div id="diagram"></div>
+                     <div class="tab-content">
+                        <div class="tab-item show-tab" id="general-diagram">
+        
+                            <div class="schedule">
+                                <figure class="highcharts-figure">
+                                    <div id="diagram"></div>
+                                 
+                                  </figure>
+                            </div>
+                            </div>
+                        <div class="tab-item" id="daily-diagram">
+                
+                            <div class="schedule">
+                                <figure class="highcharts-figure">
+                                    <div id="diagram2"></div>
+                                
+                                </figure>
+                            </div>
+                            </div>
+                     </div>
+                       <!-- <div class="tab-item show-tab" id="g">
+
+                        <figure class="highcharts-figure ">
+                            <div id="diagram"></div>
+                        
+                        </figure>
+                      </div> -->
+                      <!-- <div class="tab-item" id="d">
+
+                      <figure class="highcharts-figure">
+                        <div id="diagram2"></div>
                      
                       </figure>
+                      </div> -->
                    </div>
+                   
                    <div class="grafice-two">
                     <div class="explanation-container">
                         <div class="explanation">
@@ -277,6 +308,64 @@
         ],
 
 		});
+        ////
+        Highcharts.chart('diagram2', {
+		  chart: {
+			type: 'line'
+		  },
+		  title: {
+			text: ''
+		  },
+		  subtitle: {
+			text: ''
+		  },
+		  xAxis: {
+		 
+
+			categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+		  },
+		  yAxis: {
+			title: {
+					enabled: true,
+					text: ''
+				},
+				minRange: 3.1,
+			   
+			labels: {
+					format: '{value} m'
+				},
+				accessibility: {
+					rangeDescription: 'Range: 3.1 to 7 m.'
+				},
+				maxPadding: 0,
+				showLastLabel: true
+		  },
+		  plotOptions: {
+			line: {
+			  dataLabels: {
+				enabled: true
+			  },
+			  enableMouseTracking: false
+			}
+		  },
+		  series: [{
+			name: '',
+			data: [4, 4.8, 4.9, 4.6, 4.7, 4, 4.3, 4.7, 4.9, 5, 5.2, 4.5],
+			color: 'red'
+		  }, {
+			name: '',
+			data: [3, 3.2, 3.4, 3.6, 3.9, 3.2, 5.5, 5, 5.4, 5.6, 5.8, 4,6.4,6.6,6,7],
+			color: '#137CF9'
+		  },
+          {
+			name: '',
+			data: [3, 3,3,3,3,3,3,4.5,5,7,5,3],
+			color: '#B43AFF'
+		  },
+          
+        ],
+
+		});
              // Build the chart
 Highcharts.chart('pie', {
   chart: {
@@ -330,6 +419,27 @@ Highcharts.chart('pie', {
 ]
   }]
 });
+
+var choice = document.querySelectorAll('.choice a');
+		if(choice){
+		  choice.forEach(function(key, value){
+			 key.onclick = function(){
+			   key.parentNode.querySelector('.active').classList.remove('active');
+			   key.classList.add('active');
+                           var attr= key.getAttribute('data-href');
+                           if(attr){
+                              var items = key.parentNode.parentNode.parentNode.querySelectorAll('.tab-content .tab-item');
+                              items.forEach(function(key, value){
+                                  key.classList.remove('show-tab');
+                              })
+                              var item = key.parentNode.parentNode.parentNode.querySelector('.tab-content #' + attr);
+                              item.classList.add('show-tab');
+                              
+                           }
+			 }
+		  })
+		}
+
     </script>
 </body>
 </html>

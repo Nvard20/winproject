@@ -1793,6 +1793,10 @@ a[class*=btn-] {
 .tab-content .tab-item:not(.show-tab) {
     display: none;
 }
+.tab-item:not(.show-tab) {
+    display: none;
+}
+
 /* reg/log */
 .modal-container{
     max-width: 550px;
