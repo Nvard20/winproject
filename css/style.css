@@ -2624,6 +2624,7 @@ padding: 0 20px;
     border-bottom-right-radius: 7px;
     border-top-right-radius: 0px !important;
     border-top-left-radius: 0px !important;
+    overflow-x: auto;
 }
 .header-payment-table{
     max-width: 1146px;
@@ -3864,3 +3865,17 @@ color: #333333;
   #pie2{
       display: none;
   }
+  .grafice-statics-content .choice{
+    justify-content: center;
+  }
+  th:first-child{
+      border-bottom-left-radius:7px ;
+      border-top-left-radius:7px ;
+  }
+  th:last-child{
+    border-bottom-right-radius:7px ;
+    border-top-right-radius:7px ;
+  }
+ .statistics-specialization{
+     margin-bottom: 0 !important;
+ }
