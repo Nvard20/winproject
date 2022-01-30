@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Add Channel | Win Project</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -178,12 +178,12 @@
                
                              <section id="content">
                                 <div class="dropdown closed">
-                                  <div class="title-name">Разрешено</div>
+                                  <div class="title-name"><img src="img/green.png" alt="">  Разрешено</div>
                                   <div class="dropdown-menu">
                                     <ul>
-                                      <li> Разрешено</li>
-                                      <li>Imelda Silva</li>
-                                      <li>Marah Mueller</li>
+                                      <li class="green-color"><img src="img/green.png" alt="">  Разрешено</li>
+                                      <li class="red-color"><img src="img/Stop.png " alt=""> Запрещено</li>
+                                      <li class="blue-color"><img src="img/IssuesClose.png" alt="">  По согласовани </li>                                    </li>
                             
                                     </ul>
                                   </div>
@@ -241,7 +241,7 @@ $(".dropdown-menu li").click(function () {
 });
 
 function closeMenu(el) {
-  $(el).closest('.dropdown').toggleClass("closed").find(".title-name").text($(el).text());
+  $(el).closest('.dropdown').toggleClass("closed").find(".title-name").html($(el).html());
   $container.css("height", 0);
   $list.css( "top", 0 );
 }
@@ -250,7 +250,7 @@ function openMenu(el) {
   $(el).parent().toggleClass("closed");
   
   $container.css({
-    height: 200
+    height: 120
   })
 
 }
